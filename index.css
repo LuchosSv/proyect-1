@@ -1,0 +1,63 @@
+body {
+	font-family: Helvetica;
+	margin-left: 4%;
+	margin-right: 4%;
+	background-image: url(https://vignette.wikia.nocookie.net/overlord/images/5/50/Wiki-background/revision/latest?cb=20171125210617&path-prefix=es);
+}
+body:hover {
+    cursor: url(https://vignette.wikia.nocookie.net/overlord/images/4/4c/Cursor.png/revision/latest?cb=20171205063303&path-prefix=es),auto;
+}
+/*h1{
+	color: #D5D4D4;
+    /*display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}*/
+.container {
+	display: grid;
+	height: 100vh;
+	grid-gap: 8px;
+	grid-template-rows: 150px 1fr 100px;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: "header header" "aside cont" "footer footer";
+}
+.item {
+	border: 1px solid black;
+	color: #D5D4D4;
+	background-color: #000;
+	opacity: 0.7;
+	
+}
+/*.item:nth-of-type(4) {
+	background-color: #618647;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}*/
+.header {
+	grid-area: header;
+	color: #D5D4D4;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+.aside {
+	grid-area: aside;
+	display: flex;
+	align-items: center;
+}
+.cont {
+	grid-area: cont;
+	padding: 12px;
+}
+.footer {
+	grid-area: footer;
+
+}
+img {
+	opacity: 1;
+}
+
+
